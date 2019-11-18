@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../logo.svg'
+import ButtonContainer from "../styledComponents/ButtonContainer";
+import NavWrapper from "../styledComponents/NavWrapper";
 
 export default class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-sm navbar-dark px-sm-5 bg-primary">
+            <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
                 <Link to='/'>
                     <img src={logo} alt='store' className='navbar-brand' />
                 </Link>
@@ -17,11 +19,11 @@ export default class Navbar extends Component {
                 </ul>
 
                 <Link to = "/cart" className= "ml-auto">
-                    <button>
+                    <ButtonContainer>
                         <i className = "fas fa-cart-plus"/>My cart
-                    </button>
+                    </ButtonContainer>
                 </Link>
-            </nav>
+            </NavWrapper>
         )
     }
 }
