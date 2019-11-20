@@ -7,8 +7,8 @@
 }
 body {
   font-family: 'Open Sans', sans-serif !important;
-  background: var(--mainWhite);
   color: var(--mainDark) !important;
+  background-color: var(--mainWhite) !important;
 }
 
 .text-title {

@@ -7,7 +7,7 @@ import NavWrapper from "../styledComponents/NavWrapper";
 export default class Navbar extends Component {
     render() {
         return (
-            <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
+            <NavWrapper className="navbar fixed-top navbar-expand-sm navbar-dark px-sm-5">
                 <Link to='/'>
                     <img src={logo} alt='store' className='navbar-brand' />
                 </Link>
